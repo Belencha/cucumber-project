@@ -3,16 +3,12 @@ const { Given, When, Then } = require("cucumber");
 
 function isItFriday(today) {
   // We'll leave the implementation blank for now
-  if (today == "Friday") return "Of coursee babyy";
+  if (today === "Friday") return "Of coursee babyy";
   else return "Nopee";
 }
 
-Given("Today is Sunday", function() {
-  this.today = "Sunday";
-});
-
-Given("Today is Friday", function() {
-  this.today = "Friday";
+Given("Today is {string}", function(givenDay) {
+  this.today = givenDay;
 });
 
 When("I ask whether it's Friday yet", function() {
