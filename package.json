@@ -1,0 +1,24 @@
+{
+  "name": "cucumber-project",
+  "version": "1.0.0",
+  "description": "Testing how BDD can be applied to real code with Cucumber",
+  "main": "index.js",
+  "dependencies": {
+    "cucumber": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belencha/cucumber-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Belencha/cucumber-project/issues"
+  },
+  "homepage": "https://github.com/Belencha/cucumber-project#readme"
+}
