@@ -18,3 +18,17 @@ When("I ask whether it's Friday yet", function() {
 Then("I should be told {string}", function(expectedAnswer) {
   assert.equal(this.actualAnswer, expectedAnswer);
 });
+
+/* Adding operation */
+Given("I have two integer numbers: {int} y {int}", function(int, int2) {
+  this.number1 = int;
+  this.number2 = int2;
+});
+
+When("I add the first one to the second one", function() {
+  this.result = this.number1 + this.number2;
+});
+
+Then("the result should be {int}", function(int) {
+  assert.equal(this.result, int);
+});
